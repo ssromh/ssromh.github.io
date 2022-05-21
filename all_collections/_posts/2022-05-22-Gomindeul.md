@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "첫 웹 개발: 고민들"
+title: 첫 웹 개발: 고민들
 date: 2022-05-22
 categories: ["Web_Project"]
 ---
@@ -128,6 +128,7 @@ overflow-y: scroll;
 첫 시작으로서는 꽤나 보람찼던 것 같다.
 깔끔하고 간결한 코드고 더욱 심화된 기능을 다룰 수 있도록
 더 많이 만져봐야겠다.
+
 
 
 
