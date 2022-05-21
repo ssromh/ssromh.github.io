@@ -91,7 +91,7 @@ https://formsubmit.co/
 hover로 마우스를 올리면 색깔이 바뀌는 형태로 제작하였다.
 
 이 버튼을 누르면 전송되었다는 것을 알리기 위해 하위 페이지를 띄워야하는데,
-<img src="/assets/thkspage.png">
+<img src="/assets/thkspage.png" width="700" height="400">
 
 밑 부분만 바꾸고 다시 메인으로 돌아가는 버튼을 통해
 {메인화면 => 제출 완료 => 메인} 순으로 흘러가게 만들었다.
@@ -104,7 +104,7 @@ hover로 마우스를 올리면 색깔이 바뀌는 형태로 제작하였다.
 창 크기가 변할 때, 그에 맞추어 변화하는 UI,
 완전히 구현하기에는 지식이 짧아 우선 모바일 버전을 개발해보았다.
 
-<img src="/assets/mobile.png">
+<img src="/assets/mobile.png" width="300" height="500">
 
 같은 형태이고 소개 글만 페이지의 스크롤 락을 풀어 하단으로 넣어놓았다.
 
