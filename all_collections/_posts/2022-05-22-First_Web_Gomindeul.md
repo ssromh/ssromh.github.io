@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 첫 웹 개발: 고민들
+title: Gomindeul
 date: 2022-05-22
 categories: ["Web_Project"]
 ---
