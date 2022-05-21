@@ -1,7 +1,7 @@
 title: Programming Record
 markdown: kramdown
 url: "https://ssromh.github.io/"
-baseurl: ""
+baseurl: "https://ssromh.github.io/"
 
 # for atom feed
 author:
