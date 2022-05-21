@@ -86,101 +86,47 @@ https://formsubmit.co/
 
 어찌되었든 이게 그 고생한 "전송하기" 버튼이다.
 
-<img src="/assets/send.gif" >
+<img src="/assets/send.gif">
 
 hover로 마우스를 올리면 색깔이 바뀌는 형태로 제작하였다.
+
+이 버튼을 누르면 전송되었다는 것을 알리기 위해 하위 페이지를 띄워야하는데,
+<img src="/assets/thkspage.png">
+
+밑 부분만 바꾸고 다시 메인으로 돌아가는 버튼을 통해
+{메인화면 => 제출 완료 => 메인} 순으로 흘러가게 만들었다.
 
 
 
 ## 반응형 웹 디자인
 
 뭐니뭐니해도 이게 제일 어려웠다.
-창 크기가 변할 때, 그에 맞추어 변화하는 UI.
+창 크기가 변할 때, 그에 맞추어 변화하는 UI,
 완전히 구현하기에는 지식이 짧아 우선 모바일 버전을 개발해보았다.
 
+<img src="/assets/mobile.png">
 
+같은 형태이고 소개 글만 페이지의 스크롤 락을 풀어 하단으로 넣어놓았다.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require("./lang/" + l);
-  return true;
-};
+```css
+overflow-x: hidden;
+overflow-y: scroll;
 ```
+<img src="assets/mobile_ani.gif">
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+애니메이션도 유사하게 적용하였다.
+화면 크기가 몇 픽셀 이하이면 모바일 전용으로 디자인된 CSS 파일이 사용된다.
+훨씬 깔끔하고 효율적인 방법이다.
 
-#### Header 4
 
-- This is an unordered list following a header.
-- This is an unordered list following a header.
-- This is an unordered list following a header.
 
-##### Header 5
+## 결론
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+여기까지가 이번 프로젝트의 제작 과정이다.
+능력 부족으로 인한 아쉬운 부분들이 많았지만,
+첫 시작으로서는 꽤나 보람찼던 것 같다.
+깔끔하고 간결한 코드고 더욱 심화된 기능을 다룰 수 있도록
+더 많이 만져봐야겠다.
 
-###### Header 6
 
-| head1        | head two          | three |
-| :----------- | :---------------- | :---- |
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this.
-
----
-
-### Here is an unordered list:
-
-- Item foo
-- Item bar
-- Item baz
-- Item zip
-
-### And an ordered list:
-
-1.  Item one
-    1.  Item one
-    1.  Item two
-        1.  Item one
-        1.  Item two
-        1.  Item three
-    1.  Item three
-1.  Item four
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long.
-```
-
-```
-The final element.
-```
