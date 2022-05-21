@@ -2,7 +2,7 @@
 layout: post
 title: Gomindeul
 date: 2022-05-22
-categories: ["Web_Project"]
+categories: Web_Project
 ---
 
 # 첫번째 프론트엔드 : 고민들
