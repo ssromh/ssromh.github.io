@@ -91,7 +91,8 @@ https://formsubmit.co/
 hover로 마우스를 올리면 색깔이 바뀌는 형태로 제작하였다.
 
 이 버튼을 누르면 전송되었다는 것을 알리기 위해 하위 페이지를 띄워야하는데,
-<img src="/assets/thkspage.png" width="700" height="400">
+
+<img src="/assets/thkspage.png" width="800" height="400">
 
 밑 부분만 바꾸고 다시 메인으로 돌아가는 버튼을 통해
 {메인화면 => 제출 완료 => 메인} 순으로 흘러가게 만들었다.
@@ -112,7 +113,7 @@ hover로 마우스를 올리면 색깔이 바뀌는 형태로 제작하였다.
 overflow-x: hidden;
 overflow-y: scroll;
 ```
-<img src="assets/mobile_ani.gif">
+<img src="/assets/mobile_ani.gif" width="300" height="500">
 
 애니메이션도 유사하게 적용하였다.
 화면 크기가 몇 픽셀 이하이면 모바일 전용으로 디자인된 CSS 파일이 사용된다.
