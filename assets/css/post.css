@@ -217,4 +217,8 @@ main {
   body {
     padding: 1.5rem;
   }
+  * img {
+    max-width: 50%;
+    max-height: 50%;
+  }
 }
