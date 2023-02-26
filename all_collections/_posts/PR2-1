@@ -1,0 +1,72 @@
+---
+layout: post
+title: pdf 파일 관리 #1
+date: 2023-02-27
+categories: [PYTHON, PR2]
+---
+
+# PDF 파일 페이지 수 정리
+
+여러 PDF 파일을 한번에 제본 맡기려다 보니,
+일일이 페이지 수를 보고 기록하는 것이 귀찮았다.
+따라서 PDF 파일을 몰아넣고 파이썬으로 텍스트 파일을 하나 쓰고
+알아서 정리하도록 만들었다.
+
+
+
+## 사용 모듈
+
+```python
+import pdfreader
+from pdfreader import PDFDocument, SimplePDFViewer
+import os
+import glob
+from unicodedata import normalize
+```   
+PDF 관리를 위한 `pdfreader`
+디렉토리 특정을 위한 `os`
+PDF 파일 리스트를 위한 `glob`
+한글 깨짐 방지를 위한 `unicodedata`
+
+
+
+## 전체 코드
+
+```python
+# 현재 파일 위치 구하기
+current_path = os.path.dirname(os.path.realpath(__file__))
+
+# pdf 파일 리스트로
+FileList = glob.glob('*.pdf')
+FileNum = len(FileList)
+
+# 결과 작성할 텍스트 파일 만들기
+File = open("PDF_Pagenum.txt", 'w')
+
+# 파일에 결과 작성
+for i in range(FileNum):
+  dir_path = current_path + "/%s" % FileList[i]
+  fd = open(FileList[i], "rb")
+  doc = PDFDocument(fd)
+
+  all_pages = [p for p in doc.pages()]
+  PageNum = len(all_pages)
+
+  Title = normalize('NFC', FileList[i])
+  data = Title + "    :    %dp \n" % PageNum
+  File.write(data)
+```
+
+`current_path`에 파이썬 파일의 주소를 찾는다.
+`glob.glob`로 pdf 파일을 리스틀 가져오고, 
+`normalize`로 한글 깨짐을 해결했다.
+
+저장 양식을 바꾸려면 `data` 변수를 조절하면 된다.
+
+
+
+## 결론
+다음으로는 파일 정렬 기능을 추가해야겠다.
+
+
+
